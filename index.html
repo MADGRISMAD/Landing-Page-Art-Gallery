@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sabinos's Art Gallery</title>
+  </head>
+  <body>
+    <section>
+        <div class="circle"></div>
+      <header>
+        <a href="#"><img src="logo.png" class="logo" alt="" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Horarios</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbx">
+          <h2>El arte habla donde<br />las palabras son <span>incapaces</span> de explicar</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            error minus deserunt cumque, ab iste doloribus quibusdam in
+            repellendus modi velit placeat eius incidunt quas quam neque vel
+            illum.
+          </p>
+          <a href="#">Aprende Mas</a>
+        </div>
+        <div class="imgbx">
+          <img src="angel.png" alt="" class="star" />
+        </div>
+      </div>
+      <ul class="thumb">
+          <li><img src="opc1.png" onclick="imgSlider('angel.png');changeCircleColor('#483434')"></li>
+          <li><img src="opc2.png" onclick="imgSlider('david.png');changeCircleColor('#6B4F4F')"></li>
+          <li><img src="opc3.png" onclick="imgSlider('apolo.png');changeCircleColor('#EED6C4')"></li>
+
+      </ul>
+      <ul class="sci">
+          <li><a href="#"><img src="icons8-facebook-nuevo-48 (1).png" alt=""></a></li>
+          <li><a href="#"><img src="icons8-twitter-48 (1).png" alt=""></a></li>
+          <li><a href="#"><img src="icons8-instagram-48 (1).png" alt=""></a></li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.star').src=anything;
+
+        }
+        function changeCircleColor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>
+  </body>
+</html>
